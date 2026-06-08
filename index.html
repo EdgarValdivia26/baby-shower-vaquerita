@@ -1,15 +1,164 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baby Shower Vaquerita</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower de Ailani</title>
+
+```
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 <body>
 
-<h1>🤠 Baby Shower Vaquerita 🤠</h1>
+```
+<header class="hero">
 
-<p>Próximamente...</p>
+    <div class="overlay">
+
+        <h2>🤠 Baby Shower 🤠</h2>
+
+        <h1>Ailani</h1>
+
+        <p class="subtitle">
+            Una pequeña vaquerita viene en camino
+        </p>
+
+    </div>
+
+</header>
+
+<section class="countdown-section">
+
+    <h2>Cuenta regresiva</h2>
+
+    <div class="countdown">
+
+        <div>
+            <span id="days">00</span>
+            <small>Días</small>
+        </div>
+
+        <div>
+            <span id="hours">00</span>
+            <small>Horas</small>
+        </div>
+
+        <div>
+            <span id="minutes">00</span>
+            <small>Minutos</small>
+        </div>
+
+        <div>
+            <span id="seconds">00</span>
+            <small>Segundos</small>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="event-info">
+
+    <h2>Detalles del Evento</h2>
+
+    <p>📅 25 de Julio de 2026</p>
+
+    <p>🕒 3:00 PM</p>
+
+    <p>📍 Calle Justo Sierra #85, Colonia Moctezuma</p>
+
+    <a
+        class="btn"
+        href="#"
+        id="btnMapa"
+        target="_blank"
+    >
+        Ver Ubicación
+    </a>
+
+</section>
+
+<section class="message">
+
+    <h2>Mensaje para Nuestros Invitados</h2>
+
+    <p>
+        Estamos preparando este momento con mucha ilusión para celebrar la llegada de Ailani.
+    </p>
+
+    <p>
+        Tómate el tiempo necesario para organizar tu agenda y confirmar únicamente cuando tengas la seguridad de acompañarnos.
+    </p>
+
+    <p>
+        Tu confirmación nos ayudará a preparar adecuadamente el espacio, los alimentos y las actividades para todos nuestros invitados.
+    </p>
+
+    <p class="important">
+        Favor de confirmar antes del 10 de julio de 2026.
+    </p>
+
+</section>
+
+<section class="rsvp">
+
+    <h2>Confirmación de Asistencia</h2>
+
+    <form id="rsvpForm">
+
+        <input
+            type="text"
+            placeholder="Nombre completo"
+            required
+        >
+
+        <select required>
+            <option value="">
+                ¿Asistirás?
+            </option>
+            <option>Sí</option>
+            <option>No</option>
+        </select>
+
+        <input
+            type="number"
+            placeholder="Adultos"
+            min="0"
+            required
+        >
+
+        <input
+            type="number"
+            placeholder="Menores"
+            min="0"
+            required
+        >
+
+        <textarea
+            placeholder="Comentario opcional"
+        ></textarea>
+
+        <button type="submit">
+            Confirmar asistencia
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <p>
+        Con cariño, Familia Valdivia Vizcarra 🤠
+    </p>
+
+</footer>
+```
+
+<script src="script.js"></script>
 
 </body>
 </html>
