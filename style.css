@@ -5,10 +5,10 @@ box-sizing:border-box;
 }
 
 body{
-font-family:snell roundhand, sans-serif;
-background:#f5efe6;
-color:#3e2a1c;
-line-height:1.6;
+    font-family: Arial, sans-serif;
+    background:#f5efe6;
+    color:#3e2a1c;
+    line-height:1.6;
 }
 
 .hero{
@@ -26,7 +26,8 @@ margin-bottom:10px;
 }
 
 .hero h2{
-margin-bottom:20px;
+    font-family: 'Great Vibes', cursive;
+    font-size:3rem;
 }
 
 .subtitle{
