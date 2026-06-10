@@ -106,7 +106,7 @@ text-align:center;
 .invitation-card{
     background-image:url("marco.jpeg");
     background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center top;
+    background-size:100% auto;
+    background-position:top center;
 }
 
