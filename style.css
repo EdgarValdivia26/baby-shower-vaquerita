@@ -102,3 +102,8 @@ footer{
 padding:40px;
 text-align:center;
 }
+
+.invitation-card{
+    background-image:url("marco.jpeg");
+}
+
