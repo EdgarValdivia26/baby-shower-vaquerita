@@ -28,7 +28,13 @@ padding:40px;
 .hero h2{
     font-family: 'Allura', cursive;
     font-size:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:nowrap;
 }
+
 
 .subtitle{
 font-size:1.2rem;
@@ -111,5 +117,6 @@ text-align:center;
 }
 
 .emoji{
-    font-size:1.2rem;
+    font-size:0.6em;
+    flex-shrink:0;
 }
