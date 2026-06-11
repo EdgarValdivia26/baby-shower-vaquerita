@@ -103,6 +103,10 @@ textarea{
 padding:12px;
 }
 
+.message{
+margin-top:15px;
+}
+
 .important{
 margin-top:5px;
 font-weight:bold;
