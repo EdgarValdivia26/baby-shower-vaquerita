@@ -35,6 +35,8 @@ setInterval(updateCountdown, 1000);
 
 updateCountdown();
 
+let isSubmitting = false;
+
 document
 .getElementById("rsvpForm")
 .addEventListener("submit", async function(e){
@@ -42,6 +44,11 @@ document
     e.preventDefault();
 
     const form = e.target;
+    const btn = form.querySelector("button");
+
+    // 🔒 bloquear doble click
+    btn.disabled = true;
+    btn.textContent = "Enviando...";
 
     const data = {
         nombre: form.nombre.value,
@@ -53,27 +60,31 @@ document
 
     try {
 
-
-    await fetch("https://script.google.com/macros/s/AKfycbz85H0gFGFcHWUsURvea6TuFb8DKtHJGz3Rm2eZrcZf0wc8UV7fr41W0nm7AKZ110nfYA/exec", {
-    method: "POST",
-    body: JSON.stringify(data)
-});
-
-        
+        await fetch("https://script.google.com/macros/s/AKfycbz85H0gFGFcHWUsURvea6TuFb8DKtHJGz3Rm2eZrcZf0wc8UV7fr41W0nm7AKZ110nfYA/exec", {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
 
         alert("¡Gracias por confirmar tu asistencia! 🤠");
 
         form.reset();
 
-    } catch(error) {
+    } catch (error) {
 
         alert("Ocurrió un error. Intenta nuevamente.");
-
         console.error(error);
 
+    } finally {
+
+        isSubmitting = false; // 🔓 desbloqueo lógico
+        
+        // 🔓 desbloquear SIEMPRE
+        btn.disabled = false;
+        btn.textContent = "Confirmar asistencia 🌵";
     }
 
 });
+
 
 
 const music = document.getElementById("music");
