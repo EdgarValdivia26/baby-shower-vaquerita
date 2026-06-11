@@ -46,18 +46,8 @@ alert(
     "Próximamente conectaremos este formulario a Google Sheets."
 );
 
-
 });
 
-const music = document.getElementById("music");
-
-document.addEventListener("click", () => {
-
-    if (music.paused) {
-        music.play();
-    }
-
-}, { once: true });
 
 const music = document.getElementById("music");
 
