@@ -53,13 +53,16 @@ document
 
     try {
 
-        await fetch(
-            "https://script.google.com/macros/s/AKfycbw9MlZdKT4QiMfyIdd0pBpsuQxEZbpefmN5UkYOJ_ojA6a9nxP_l1uL0lP4IqyWJXwm/exec",
-            {
-                method: "POST",
-                body: JSON.stringify(data)
-            }
-        );
+       await fetch(
+    "https://script.google.com/macros/s/AKfycbw9MlZdKT4QiMfyIdd0pBpsuQxEZbpefmN5UkYOJ_ojA6a9nxP_l1uL0lP4IqyWJXwm/exec",
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }
+);
 
         alert("¡Gracias por confirmar tu asistencia! 🤠");
 
