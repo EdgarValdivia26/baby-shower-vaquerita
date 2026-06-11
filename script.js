@@ -95,8 +95,8 @@ document
 
     music.play();
 
-    document
-    .getElementById("welcomeScreen")
-    .style.display = "none";
+    document.getElementById("welcomeScreen").style.display = "none";
+    
+    document.querySelector(".invitation-card").classList.add("show");
 
 });
