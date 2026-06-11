@@ -53,15 +53,13 @@ document
 
     try {
 
-     await fetch("https://script.google.com/macros/s/AKfycbxfvMyRcv6Q6uGZlql5RWdJcY6JrNKRibg8VjvJvZexX6mmEYfaZY-vq1Y32Raf_t8Eaw/exec", {
+
+    await fetch("https://script.google.com/macros/s/AKfycbz85H0gFGFcHWUsURvea6TuFb8DKtHJGz3Rm2eZrcZf0wc8UV7fr41W0nm7AKZ110nfYA/exec", {
+    method: "POST",
+    body: JSON.stringify(data)
+});
+
         
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    }
-);
 
         alert("¡Gracias por confirmar tu asistencia! 🤠");
 
