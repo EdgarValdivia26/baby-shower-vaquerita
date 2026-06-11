@@ -37,14 +37,41 @@ updateCountdown();
 
 document
 .getElementById("rsvpForm")
-.addEventListener("submit", function(e){
+.addEventListener("submit", async function(e){
 
+    e.preventDefault();
 
-e.preventDefault();
+    const form = e.target;
 
-alert(
-    "Próximamente conectaremos este formulario a Google Sheets."
-);
+    const data = {
+        nombre: form.nombre.value,
+        asiste: form.asiste.value,
+        adultos: form.adultos.value,
+        menores: form.menores.value,
+        comentario: form.comentario.value
+    };
+
+    try {
+
+        await fetch(
+            "https://script.google.com/macros/s/AKfycbw9MlZdKT4QiMfyIdd0pBpsuQxEZbpefmN5UkYOJ_ojA6a9nxP_l1uL0lP4IqyWJXwm/exec",
+            {
+                method: "POST",
+                body: JSON.stringify(data)
+            }
+        );
+
+        alert("¡Gracias por confirmar tu asistencia! 🤠");
+
+        form.reset();
+
+    } catch(error) {
+
+        alert("Ocurrió un error. Intenta nuevamente.");
+
+        console.error(error);
+
+    }
 
 });
 
