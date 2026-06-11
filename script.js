@@ -53,9 +53,8 @@ document
 
     try {
 
-       await fetch(
-    "https://script.google.com/macros/s/AKfycbw9MlZdKT4QiMfyIdd0pBpsuQxEZbpefmN5UkYOJ_ojA6a9nxP_l1uL0lP4IqyWJXwm/exec",
-    {
+     await fetch("https://script.google.com/macros/s/AKfycbxfvMyRcv6Q6uGZlql5RWdJcY6JrNKRibg8VjvJvZexX6mmEYfaZY-vq1Y32Raf_t8Eaw/exec", {
+        
         method: "POST",
         headers: {
             "Content-Type": "application/json"
