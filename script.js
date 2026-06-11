@@ -48,3 +48,13 @@ alert(
 
 
 });
+
+const music = document.getElementById("music");
+
+document.addEventListener("click", () => {
+
+    if (music.paused) {
+        music.play();
+    }
+
+}, { once: true });
