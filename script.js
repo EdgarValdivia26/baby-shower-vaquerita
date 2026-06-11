@@ -58,3 +58,17 @@ document.addEventListener("click", () => {
     }
 
 }, { once: true });
+
+const music = document.getElementById("music");
+
+document
+.getElementById("enterBtn")
+.addEventListener("click", () => {
+
+    music.play();
+
+    document
+    .getElementById("welcomeScreen")
+    .style.display = "none";
+
+});
