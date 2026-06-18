@@ -168,20 +168,27 @@ text-align:center;
 
 .gallery{
     display:flex;
-    gap:15px;
+    gap:12px;
     overflow-x:auto;
-    padding:20px;
+    max-width:700px;
+    margin:30px auto;
+    padding:10px;
     scroll-behavior:smooth;
 }
 
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+
 .gallery img{
-    width:250px;
-    height:350px;
+    width:140px;
+    height:200px;
     object-fit:cover;
     border-radius:12px;
     flex-shrink:0;
     cursor:pointer;
 }
+
 
 #imageModal{
     display:none;
@@ -209,4 +216,8 @@ text-align:center;
     color:white;
     font-size:40px;
     cursor:pointer;
+}
+
+.overlay{
+    width:100%;
 }
