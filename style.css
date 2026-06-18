@@ -165,3 +165,20 @@ text-align:center;
     opacity: 1;
     transform: scale(1);
 }
+
+.gallery{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    padding:20px;
+    scroll-behavior:smooth;
+}
+
+.gallery img{
+    width:250px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+    flex-shrink:0;
+    cursor:pointer;
+}
