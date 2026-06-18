@@ -221,3 +221,26 @@ text-align:center;
 .overlay{
     width:100%;
 }
+
+.gallery-wrapper{
+    position:relative;
+    max-width:700px;
+    margin:auto;
+}
+
+.gallery-wrapper::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:100%;
+
+    background:linear-gradient(
+        to left,
+        #f5efe6,
+        transparent
+    );
+
+    pointer-events:none;
+}
