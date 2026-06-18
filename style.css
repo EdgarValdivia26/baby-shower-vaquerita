@@ -106,8 +106,12 @@ padding:12px;
 }
 
 .message{
-margin-top:15px;
+    background:rgba(255,255,255,0.45);
+    border-radius:15px;
+    padding:25px;
 }
+
+
 
 .important{
 margin-top:5px;
