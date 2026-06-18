@@ -100,3 +100,33 @@ document
     document.querySelector(".invitation-card").classList.add("show");
 
 });
+
+const images = document.querySelectorAll(".gallery img");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.getElementById("closeModal");
+
+images.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+
+    });
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+});
+
+modal.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+
+});
