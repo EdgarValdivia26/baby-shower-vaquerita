@@ -248,3 +248,20 @@ text-align:center;
 
     pointer-events:none;
 }
+
+.closed-btn{
+    background:#f08bb3;   /* Rosa */
+    color:white;
+    cursor:not-allowed;
+    opacity:0.95;
+}
+
+.closed-btn:hover{
+    background:#f08bb3;
+}
+
+.closed-message{
+    margin-top:15px;
+    color:#8b5e34;
+    font-size:0.95rem;
+}
